@@ -1,0 +1,48 @@
+/* tablet portrait */
+@media screen and (min-width: 600px) {
+	.con-articles {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	article {
+		width: 48%;
+	}
+}
+
+/* tablet landscape */
+@media screen and (min-width: 900px) {
+	.dash-title {
+		display: flex;
+		justify-content: space-between;
+		.title {
+			width: 70%;
+			p {
+				border-bottom: none;
+			}
+		}
+
+		.toggle {
+			width: 30%;
+			justify-content: flex-end;
+			.toggle-text {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	article:hover {
+		background-color: rgba($col-text-gray-dark, 0.5);
+	}
+}
+
+/* desktop */
+@media screen and (min-width: 1200px) {
+	article {
+		width: 23.5%;
+	}
+}
+
+/* big desktop */
+@media screen and (min-width: 1800px) {
+}

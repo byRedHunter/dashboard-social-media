@@ -1,0 +1,25 @@
+body.lightMode {
+	background-color: $col-light-theme;
+}
+
+.lightMode section {
+	color: $col-text-gray-dark;
+	strong {
+		color: $col-dark-theme !important;
+	}
+}
+
+.lightMode h2 {
+	color: $col-dark-theme;
+}
+
+.lightMode article {
+	background-color: $col-text-gray;
+	&:hover {
+		background-color: darken($color: $col-text-gray, $amount: 7);
+	}
+}
+
+.lightMode .dash-title .title p {
+	color: $col-text-gray-dark;
+}

@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: rgba($color: $col-text-gray-dark, $alpha: 1);
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 10px #00000070;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(125deg, $col-green, $col-red);
+	border-radius: 5px;
+}
+
+body {
+	min-width: 375px;
+	font-size: $text-size;
+	font-family: $text-family;
+	background-color: $col-dark-theme;
+	transition: all ease-in-out 0.3s;
+}
+
+section {
+	width: 100%;
+	margin-top: 10px;
+	color: $col-text-morado;
+}
+
+p strong,
+h2 {
+	color: $col-light-theme;
+	transition: all ease-in 0.3s;
+}
+
+article {
+	background: $col-article;
+	margin-bottom: 30px;
+	border-radius: 0 0 5px 5px;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	transition: all ease 0.3s;
+	p.icono {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		margin-top: 10px;
+	}
+}
+.border article::after {
+	content: '';
+	position: absolute;
+	top: -5px;
+	width: 100%;
+	height: 5px;
+	background: $col-light-theme;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}

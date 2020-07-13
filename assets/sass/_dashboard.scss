@@ -1,0 +1,106 @@
+section.dashboard {
+	article {
+		height: 220px;
+		justify-content: space-between;
+		p.icono {
+			justify-content: center;
+			span {
+				margin-left: 10px;
+				line-height: 8px;
+			}
+		}
+		p.followers {
+			font-size: 4em;
+			margin-top: 20px;
+			margin-bottom: 40px;
+			strong {
+				position: relative;
+				&::before {
+					content: 'FOLLOWERS';
+					font-size: 14px;
+					font-weight: lighter;
+					position: absolute;
+					bottom: -14px;
+					color: $col-text-morado;
+					letter-spacing: 4px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+
+		p.article-footer {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+			span {
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+.dash-title {
+	.title {
+		font-size: 1.2em;
+		h2 {
+		}
+
+		p {
+			width: 100%;
+			font-weight: 700;
+			font-size: 14px;
+			margin: 5px 0 0;
+			padding-bottom: 20px;
+			border-bottom: 1px solid $col-text-gray-dark;
+		}
+	}
+
+	.toggle {
+		width: 100%;
+		height: 30px;
+		margin: 20px 0 40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.toggle-text {
+			font-weight: 700;
+		}
+		.toggle-btn {
+			width: 48px;
+			height: 24px;
+			padding: 5px;
+			border-radius: 20px;
+			background: $col-toggle;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			cursor: pointer;
+			.button {
+				height: 18px;
+				width: 18px;
+				border-radius: 50%;
+				background-color: $col-dark-theme;
+				box-shadow: 0 0 5px 1px $col-text-gray-dark;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.con-articles {
+	& article:nth-child(1)::after {
+		background-color: $col-facebook;
+	}
+	& article:nth-child(2)::after {
+		background-color: $col-twitter;
+	}
+	& article:nth-child(3)::after {
+		background: $col-instagram;
+	}
+	& article:nth-child(4)::after {
+		background-color: $col-youtube;
+	}
+}
